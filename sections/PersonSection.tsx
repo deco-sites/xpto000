@@ -22,7 +22,7 @@ export default function Section(props: Props) {
       id="Person"
       class="container py-10 flex flex-col h-screen w-full items-center justify-center gap-16"
     >
-      teste
+      {props.resultSet}
     </div>
   );
 }
