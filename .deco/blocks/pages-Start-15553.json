@@ -4,7 +4,10 @@
   "sections": [
     {
       "__resolveType": "site/sections/PersonSection.tsx",
-      "id": "22"
+      "id": "22",
+      "resultSet": {
+        "__resolveType": "site/loaders/PersonLoader.ts"
+      }
     },
     {
       "__resolveType": "Footer"
