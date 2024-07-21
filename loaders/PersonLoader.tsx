@@ -19,7 +19,7 @@ export const turso = createClient({
 
 export default async function loader(props: Props): Promise<ResultSet> {
   
-  const rs:ResultSet = (await turso.execute({sql: "SELECT * FROM person where id=55555", args: [props.id]}));
+  const rs:ResultSet = (await turso.execute({sql: "SELECT * FROM person where id=?", args: [props.id]}));
 
   return (
     rs
