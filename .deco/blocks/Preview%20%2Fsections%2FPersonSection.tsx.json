@@ -1,3 +1,7 @@
 {
-  "__resolveType": "site/sections/PersonSection.tsx"
+  "__resolveType": "site/sections/PersonSection.tsx",
+  "resultSet": {
+    "__resolveType": "site/loaders/PersonLoader.tsx"
+  },
+  "id": "22"
 }
