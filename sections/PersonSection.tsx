@@ -12,7 +12,7 @@ interface Props {
    * @description profiles.
    * @default 
    */
-  resultSet: ResultSet;
+  resultSet: Promise<ResultSet>;
 }
 
 export default function Section(props: Props) {
