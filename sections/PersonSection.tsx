@@ -1,6 +1,6 @@
 import { ResultSet } from "https://esm.sh/@libsql/client@0.6.0/web";
 
-export interface Props {
+interface Props {
   /**
    * @format integer between 1 and 100.000
    * @description id of the profile.
