@@ -4,7 +4,12 @@ import { load } from "https://deno.land/std@0.224.0/dotenv/mod.ts";
 const env = await load();
 
 export interface Props {
-    id: string;
+ /**
+   * @format integer between 1 and 100.000
+   * @description id of the profile.
+   * @default 1
+   */
+ id: string;
 }
 
 export const turso = createClient({
@@ -12,11 +17,9 @@ export const turso = createClient({
   authToken: env["TURSO_AUTH_TOKEN"],
 });
 
-export default async function loader({
-  id = "0"
-}: Props): Promise<ResultSet> {
+export default async function loader(props: Props): Promise<ResultSet> {
   
-  const rs:ResultSet = (await turso.execute({sql: "SELECT * FROM person where id=?", args: [id]}));
+  const rs:ResultSet = (await turso.execute({sql: "SELECT * FROM person where id=55555", args: [props.id]}));
 
   return (
     rs
