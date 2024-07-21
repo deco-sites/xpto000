@@ -44,5 +44,13 @@
   "/.deco/blocks/deco-htmx.json": {
     "blockType": "apps",
     "__resolveType": "site/apps/deco/htmx.ts"
+  },
+  "/.deco/blocks/Preview%20site%2Floaders%2FPersonLoader.tsx.json": {
+    "blockType": "loaders",
+    "__resolveType": "site/loaders/PersonLoader.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FPersonSection.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/PersonSection.tsx"
   }
 }
