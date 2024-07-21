@@ -3,7 +3,7 @@ import { load } from "https://deno.land/std@0.224.0/dotenv/mod.ts";
 
 const env = await load();
 
-interface Props {
+export interface Props {
     id: string;
 }
 
