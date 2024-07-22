@@ -1,4 +1,4 @@
-import { ResultSet } from "https://esm.sh/@libsql/client@0.6.0/web";
+//import { ResultSet } from "https://esm.sh/@libsql/client@0.6.0/web";
 import { type retorno } from "site/loaders/PersonLoader.tsx"
 interface Props {
   /**
