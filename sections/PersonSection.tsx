@@ -1,5 +1,5 @@
-import { ResultSet, Rows } from "https://esm.sh/@libsql/client@0.6.0/web";
-
+import { ResultSet } from "https://esm.sh/@libsql/client@0.6.0/web";
+import { type retorno } from "site/loaders/PersonLoader.tsx"
 interface Props {
   /**
    * @format integer between 1 and 100.000
@@ -12,7 +12,7 @@ interface Props {
    * @description profiles.
    * @default 
    */
-  resultSet: ResultSet;
+  resultSet: retorno;
 }
 
 export default function Section(props: Props) {
@@ -22,7 +22,7 @@ export default function Section(props: Props) {
       id="Person"
       class="container py-10 flex flex-col h-screen w-full items-center justify-center gap-16"
     >
-      <p>{props.resultSet.rows.map((row:Rows) => {row})}</p>
+      <p>{props.resultSet}</p>
     </div>
   );
 }

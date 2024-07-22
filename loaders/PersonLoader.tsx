@@ -3,6 +3,8 @@ import { load } from "https://deno.land/std@0.224.0/dotenv/mod.ts";
 
 const env = await load();
 
+export type retorno = ResultSet;
+
 export interface Props {
  /**
    * @format integer between 1 and 100.000
@@ -17,9 +19,9 @@ export const turso = createClient({
   authToken: env["TURSO_AUTH_TOKEN"],
 });
 
-export default async function loader(props: Props): Promise<ResultSet> {
+export default async function loader(props: Props): Promise<retorno> {
   
-  const rs:ResultSet = await turso.execute({sql: "SELECT * FROM person where id=?", args: [props.id]});
+  const rs = await turso.execute({sql: "SELECT * FROM person where id=?", args: [props.id]});
 
   return (
     rs
