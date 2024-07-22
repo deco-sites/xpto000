@@ -4,9 +4,10 @@
   "sections": [
     {
       "__resolveType": "site/sections/PersonSection.tsx",
-      "id": "21",
+      "id": "13",
       "resultSet": {
-        "__resolveType": "site/loaders/PersonLoader.tsx"
+        "__resolveType": "site/loaders/PersonLoader.tsx",
+        "id": "13"
       }
     },
     {
